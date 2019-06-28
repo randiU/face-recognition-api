@@ -56,6 +56,7 @@ app.put('/images', (req, res) => {image.handleImage(req, res, db)})
 app.post('/imageurl', (req, res) => {image.handleApiCall(req, res)})
 
 //makes the server listen on this localhost
-app.listen(2000, () => {
-	console.log('app is running on port 2000');
+//we need to make the port able to update based on the port provided
+app.listen(process.env.PORT || 2000, () => {
+	console.log(`app is running on port ${process.env.PORT}`);
 })
