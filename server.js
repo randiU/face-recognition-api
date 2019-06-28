@@ -32,7 +32,7 @@ app.use(cors());
 
 app.get('/', (req, res) => {
 	//root route will simply send the user database
-	res.send(database.users);
+	res.send('it is working!');
 })
 
 //signin route will compare the email and passwords to the ones in the
