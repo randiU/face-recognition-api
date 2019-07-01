@@ -15,7 +15,7 @@ const db = knex({
   connection: {
   	//connecting to our database we created in Heroku using postgresSQL
     connectionString: process.env.DATABASE_URL,
-    ssl: true
+    ssl: true,
   }
 });
 
